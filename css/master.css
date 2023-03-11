@@ -707,7 +707,9 @@ a {
   -ms-transform: rotate(5deg);
   -o-transform: rotate(5deg);
 }
-
+.social-media span {
+  font-size: 14px;
+}
 .social-media .twitter {
   background-color: rgb(210, 236, 252);
 }
