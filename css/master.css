@@ -679,9 +679,11 @@ a {
 /* start social media  */
 .social-media {
   position: relative;
+  align-items: center;
+  justify-content: flex-start;
 }
 @media (max-width: 767px) {
-  .social-media {
+  .social-media .box {
     gap: 10px;
   }
 }
@@ -755,6 +757,7 @@ a {
   color: white;
   position: absolute;
   right: 30px;
+  font-size: 12px;
 }
 /* end social media  */
 /* start projects  */
