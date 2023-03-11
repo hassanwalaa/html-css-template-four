@@ -677,6 +677,14 @@ a {
 
 /* end post  */
 /* start social media  */
+.social-media {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .social-media {
+    gap: 10px;
+  }
+}
 .social-media .icon {
   width: 60px;
   max-width: 60px;
@@ -697,6 +705,7 @@ a {
   -ms-transform: rotate(5deg);
   -o-transform: rotate(5deg);
 }
+
 .social-media .twitter {
   background-color: rgb(210, 236, 252);
 }
@@ -744,11 +753,19 @@ a {
 
 .social-media a {
   color: white;
+  position: absolute;
+  right: 30px;
 }
 /* end social media  */
 /* start projects  */
 .projects {
-  width: 100%;
+  margin: 20px auto;
+  width: 95%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .responisve-table {
   overflow-x: auto;
