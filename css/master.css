@@ -158,6 +158,7 @@ a {
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
+  margin-right: 5px;
 }
 .head .search input:focus {
   width: 200px;
@@ -449,6 +450,11 @@ a {
 
 .latest-news img {
   width: 100px;
+}
+@media (max-width: 767px) {
+  .latest-news img {
+    width: 100%;
+  }
 }
 .latest-news .box {
   justify-content: space-between;
