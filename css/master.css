@@ -838,6 +838,245 @@ a {
   background-color: rgb(250, 247, 247);
 }
 /* end projects  */
+/* start settings-page  */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.settings-page :disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* start the switch  */
+.widgets-control .control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.widgets-control .control input[type="checkbox"],
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  font-family: var(--font-awesome);
+  position: absolute;
+  content: "\f00d";
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  background-color: white;
+  color: var(--blue-color);
+}
+/* end the switch  */
+/* start general info  */
+.general-info .email input {
+  background-color: rgb(240, 244, 248);
+}
+/* end general info  */
+/* start security info  */
+.security-info .box:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.security-info .blue:hover {
+  background-color: var(--blue-alt-color);
+}
+/* end security info  */
+
+/* start social info  */
+.social-info i {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.social-info div:focus-within i {
+  color: black;
+}
+/* end social info  */
+/* start widgets control  */
+.widgets-control .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.widgets-control .control label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+  margin-top: -9px;
+}
+.widgets-control .control label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+.widgets-control .control label::after {
+  content: "\f00c";
+  font-family: var(--font-awesome);
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(360deg);
+  -webkit-transform: scale(0) rotate(360deg);
+  -moz-transform: scale(0) rotate(360deg);
+  -ms-transform: scale(0) rotate(360deg);
+  -o-transform: scale(0) rotate(360deg);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+/* end widgets control  */
+/* start backup manager  */
+.backup-manager input {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.backup-manager .control label {
+  position: relative;
+  margin-left: 10px;
+}
+.backup-manager .control label::before {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--grey-color);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.backup-manager .control label::after {
+  content: "";
+  position: absolute;
+  left: -26.5px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -6.5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--blue-color);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+.backup-manager .control input:checked + label::after {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.backup-manager .servers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.backup-manager .server {
+  padding: 0;
+}
+.backup-manager .server label {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.backup-manager .servers input:checked + div {
+  border: 2px solid var(--blue-color);
+  color: var(--blue-color);
+}
+@media (max-width: 767px) {
+  .backup-manager .servers {
+    grid-template-columns: 1fr;
+  }
+}
+/* end backup manager  */
+/* end settings-page  */
 /* end content  */
 /* start key frames  */
 @keyframes head-move-ball {
