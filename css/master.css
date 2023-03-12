@@ -566,6 +566,7 @@ a {
   display: block;
   margin-left: 35px;
   position: relative;
+  z-index: 1;
 }
 .project-prog li::before {
   content: "";
@@ -601,8 +602,9 @@ a {
   left: -24px;
   bottom: -33px;
   width: 2px;
-  height: 31px;
+  height: 43px;
   background-color: var(--blue-color);
+  z-index: -1;
 }
 .project-prog img {
   position: absolute;
