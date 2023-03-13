@@ -913,6 +913,63 @@ a {
   background-color: white;
   color: var(--blue-color);
 }
+
+.switch-2 input {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.small-switch {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ccc;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.small-switch::before {
+  content: "\f00d";
+  font-family: var(--font-awesome);
+  position: absolute;
+  font-size: 12px;
+  font-weight: 900;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: 4px;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.switch-2 input:checked + div::before {
+  left: 62px;
+  content: "\f00c";
+  color: var(--blue-color);
+}
+.switch-2 input:checked + div {
+  background-color: var(--blue-color);
+}
 /* end the switch  */
 /* start general info  */
 .general-info .email input {
@@ -999,7 +1056,7 @@ a {
 }
 .backup-manager .control label {
   position: relative;
-  margin-left: 10px;
+  padding-left: 30px;
 }
 .backup-manager .control label::before {
   content: "";
@@ -1013,7 +1070,7 @@ a {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   top: 50%;
-  left: -30px;
+  left: 0;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -1023,11 +1080,10 @@ a {
 .backup-manager .control label::after {
   content: "";
   position: absolute;
-  left: -26.5px;
-  top: 50%;
+  left: 3.6px;
+  top: 3.6px;
   width: 14px;
   height: 14px;
-  margin-top: -6.5px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1052,10 +1108,18 @@ a {
   -ms-transform: scale(1);
   -o-transform: scale(1);
 }
+.backup-manager .control input:checked + label::before {
+  border-color: var(--blue-color);
+}
 .backup-manager .servers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .backup-manager .servers {
+    grid-template-columns: 1fr;
+  }
 }
 .backup-manager .server {
   padding: 0;
@@ -1065,18 +1129,58 @@ a {
   height: 100%;
   padding: 20px;
   text-align: center;
+  cursor: pointer;
 }
 .backup-manager .servers input:checked + div {
   border: 2px solid var(--blue-color);
   color: var(--blue-color);
 }
-@media (max-width: 767px) {
-  .backup-manager .servers {
-    grid-template-columns: 1fr;
-  }
-}
+
 /* end backup manager  */
 /* end settings-page  */
+
+/* start profilo page  */
+/* start profile overview  */
+.overview .profile-overview {
+  margin: 50px 0;
+  padding: 0 50px;
+}
+.overview .profile-overview img {
+  width: 120px;
+}
+
+@media (max-width: 767px) {
+  .overview .prfoile-details .box {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+/* end profile overview  */
+/* start the secod container  */
+/* start skills container  */
+
+.profile-info .my-skills {
+  flex-basis: 400px;
+}
+.profile-info .my-skills span {
+  cursor: initial;
+}
+.profile-info .my-skills .box {
+  padding-bottom: 15px;
+}
+
+/* end skills container  */
+/* start lateset activites  */
+.latest-acitivtes .box img {
+  width: 64px;
+  height: 64px;
+}
+/* end lateset activites  */
+/* end the secod container  */
+/* start profilo page  */
+
 /* end content  */
 /* start key frames  */
 @keyframes head-move-ball {

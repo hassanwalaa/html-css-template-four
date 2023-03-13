@@ -12,11 +12,15 @@
   flex-direction: column;
 }
 @media (max-width: 767px) {
-  .column-moblie {
+  .column-mobile {
     flex-direction: column;
   }
 }
-
+@media (max-width: 767px) {
+  .align-center-mobile {
+    align-items: center;
+  }
+}
 .align-center {
   align-items: center;
 }
@@ -109,6 +113,21 @@
 .pt-25 {
   padding-top: 25px;
 }
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-35 {
+  padding-top: 35px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-45 {
+  padding-top: 45px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
 .pb-5 {
   padding-bottom: 5px;
 }
@@ -123,6 +142,24 @@
 }
 .pb-25 {
   padding-bottom: 25px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pb-35 {
+  padding-bottom: 35px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.pb-45 {
+  padding-bottom: 45px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+.pr-0 {
+  padding-right: 0;
 }
 .pr-5 {
   padding-right: 5px;
@@ -145,6 +182,7 @@
 .m-0 {
   margin: 0;
 }
+
 .mt-0 {
   margin-top: 0;
 }
@@ -175,6 +213,12 @@
 .m-auto {
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 767px) {
+  .m-auto-mobile {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .mb-10 {
   margin-bottom: 10px;
@@ -234,6 +278,9 @@
 }
 .c-red {
   color: rgb(244, 67, 54);
+}
+.c-gold {
+  color: rgb(245, 158, 11);
 }
 /* end color  */
 /* start position  */
@@ -373,7 +420,21 @@
 .w-500 {
   width: 500px;
 }
-
+.h-1 {
+  height: 1px;
+}
+.h-2 {
+  height: 2px;
+}
+.h-3 {
+  height: 3px;
+}
+.h-4 {
+  height: 4px;
+}
+.h-5 {
+  height: 5px;
+}
 .h-50 {
   height: 50px;
 }
@@ -455,6 +516,12 @@
   cursor: pointer;
   display: block;
   width: fit-content;
+}
+.pointer-on {
+  cursor: pointer;
+}
+.pointer-off {
+  cursor: initial;
 }
 .border-ccc {
   border: 1px solid #ccc;
