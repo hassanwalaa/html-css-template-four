@@ -1242,6 +1242,182 @@ a {
   overflow: hidden;
 }
 /* end courses page  */
+/* start friends page  */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(100px, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+}
+.friends-page .icon {
+  left: 10px;
+  top: 10px;
+}
+.friends-page .vip {
+  font-size: 40px;
+  bottom: 70px;
+  right: 30px;
+  color: var(--orange-color);
+  opacity: 0.2;
+  font-weight: bold;
+}
+.friends-page .icon i {
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.friends-page .icon i:hover {
+  background-color: var(--blue-color);
+  color: white;
+  cursor: pointer;
+}
+/* end friends page  */
+/* start file page  */
+.file-page {
+  margin: 20px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .file-page {
+    gap: 10px;
+    margin: 10px;
+  }
+}
+.file-page .file-upload {
+  flex-basis: 250px;
+}
+.file-page .file-upload .container i {
+  padding: 15px;
+}
+.file-page .file-upload .blue {
+  background-color: rgb(204, 227, 255);
+}
+.file-page .file-upload .green {
+  background-color: rgb(211, 243, 223);
+}
+.file-page .file-upload .red {
+  background-color: rgb(253, 217, 215);
+}
+.file-page .file-upload .orange {
+  background-color: rgb(253, 236, 206);
+}
+.file-upload > span {
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+.file-upload > span:hover i {
+  animation: arrow-up-and-down infinite 0.5s;
+  -webkit-animation: arrow-up-and-down infinite 0.5s;
+}
+
+.files {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  height: fit-content;
+}
+@media (max-width: 767px) {
+  .files {
+    grid-template-columns: minmax(100px, 1fr);
+    gap: 10px;
+  }
+}
+.files .box i {
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.files .box img {
+  width: 64px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.files .box img:hover {
+  transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+}
+/* end file page  */
+/* start plans page  */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(100px, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+}
+.plans-page .box .free {
+  border: 3px solid white;
+  outline: 3px solid var(--green-color);
+}
+.plans-page .box .basic {
+  border: 3px solid white;
+  outline: 3px solid var(--blue-color);
+}
+.plans-page .box .premium {
+  border: 3px solid white;
+  outline: 3px solid var(--orange-color);
+}
+.plans-page .box .plan-price span:first-child {
+  font-size: 25px;
+  font-weight: bold;
+}
+.plans-page .box .price {
+  font-size: 40px;
+}
+.plans-page .box .properites div {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  display: flex;
+  gap: 5px;
+}
+.plans-page .box .properites div .help {
+}
+.plans-page .box .properites div i {
+  font-size: 18px;
+}
+.plans-page .box .properites div .fa-check {
+  color: var(--green-color);
+}
+.plans-page .box .properites div .fa-xmark {
+  color: var(--red-color);
+}
+.plans-page .box .properites div span {
+  font-size: 16px;
+  flex: 1;
+}
+.plans-page .box .properites .fa-circle-info {
+  display: block;
+  justify-self: flex-end;
+  align-self: center;
+  margin-right: 5px;
+  position: relative;
+  color: gray;
+}
+
+/* end plans page  */
 /* end content  */
 /* start key frames  */
 @keyframes head-move-ball {
@@ -1310,6 +1486,22 @@ a {
   }
   30% {
     background-color: var(--blue-color);
+  }
+}
+@keyframes arrow-up-and-down {
+  50% {
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
   }
 }
 /* start key frames  */

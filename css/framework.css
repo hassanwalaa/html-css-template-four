@@ -11,9 +11,12 @@
 .column {
   flex-direction: column;
 }
+.column-reverse {
+  flex-direction: column-reverse;
+}
 @media (max-width: 767px) {
-  .column-mobile {
-    flex-direction: column;
+  .column-mobile-reverse {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 767px) {
@@ -387,6 +390,12 @@
   .d-none-mobile {
     display: none;
   }
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
 }
 .fs-14 {
   font-size: 14px;
