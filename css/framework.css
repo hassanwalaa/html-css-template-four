@@ -20,6 +20,11 @@
   }
 }
 @media (max-width: 767px) {
+  .column-mobile {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
   .align-center-mobile {
     align-items: center;
   }
