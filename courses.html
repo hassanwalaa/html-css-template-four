@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- adding the frame work  -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- adding the main css sheet  -->
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- googlee fonts  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap"
+      rel="stylesheet"
+    />
+    <title>Courses</title>
+  </head>
+  <body>
+    <div class="page d-flex">
+      <!-- start side bar  -->
+      <div class="sidebar bg-white p-relative">
+        <h3 class="p-relative text-c mt-0">Elgohary</h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="d-flex align-center fs-14 c-black rad-6 p-10 gap-10"
+            >
+              <i class="fa-solid fa-chart-bar fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="d-flex align-center fs-14 c-black rad-6 p-10 gap-10"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i> <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="d-flex align-center fs-14 c-black rad-6 p-10 gap-10"
+            >
+              <i class="fa-solid fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="d-flex align-center fs-14 c-black rad-6 p-10 gap-10 active"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="d-flex align-center fs-14 c-black rad-6 p-10 gap-10"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#friends"
+              class="d-flex align-center fs-14 c-black rad-6 p-10 gap-10"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#files"
+              class="d-flex align-center fs-14 c-black rad-6 p-10 gap-10"
+            >
+              <i class="fa-regular fa-file fa-fw"></i> <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#plans"
+              class="d-flex align-center fs-14 c-black rad-6 p-10 gap-10"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- end side bar  -->
+      <!-- start content  -->
+      <div class="content w-full">
+        <!-- start head  -->
+        <div class="head bg-white p-15 between-flex">
+          <div class="search p-relative">
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              class="p-10 rad-10 b-none"
+            />
+          </div>
+          <div class="icons d-flex align-center gap-20">
+            <span class="notifigation p-relative"
+              ><i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+
+            <a href="profile.html"
+              ><img class="rad-50" src="imgs/avatar.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- end head  -->
+
+        <h1 class="p-relative">Courses</h1>
+        <!-- start courses page  -->
+        <div class="courses-page m-20 d-grid gap-20">
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-01.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">JavaScript Fundamentals</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn the fundamentals of JavaScript programming, including data
+                types, control flow, functions, and objects.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>500</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>99</span>
+            </div>
+            <img src="imgs/team-01.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-02.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">Python for Data Science</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn how to use Python to collect, clean, and analyze data, and
+                create visualizations and predictive models.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>800</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>129</span>
+            </div>
+            <img src="imgs/team-02.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-03.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">React Development</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn how to build web applications using the popular React
+                framework, including component design, state management, and
+                data fetching.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>1200</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>199</span>
+            </div>
+            <img src="imgs/team-03.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-04.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">Java Programming</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn the fundamentals of programming with Java, including
+                variables, data types, control structures, and methods.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>900</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>149</span>
+            </div>
+            <img src="imgs/team-04.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-05.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">C++ for Beginners</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn the basics of C++ programming, including variables, data
+                types, functions, and control structures.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>600</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>89</span>
+            </div>
+            <img src="imgs/team-05.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-01.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">Full Stack Web Development</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn how to build dynamic web applications using a full stack
+                of technologies, including HTML, CSS, JavaScript, Node.js, and
+                MongoDB.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>1500</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>299</span>
+            </div>
+            <img src="imgs/team-01.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-02.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">Data Structures and Algorithms</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn how to design and implement efficient data structures and
+                algorithms in your programming projects.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>700</span>
+              <a
+                href="#"
+                class="button-1x bg-blue c-white fs-14Course Info"
+              ></a>
+              <span><i class="fa-solid fa-dollar-sign"></i>199</span>
+            </div>
+            <img src="imgs/team-02.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-03.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">Python for Data Science</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn how to use Python to analyze and visualize data, build
+                machine learning models, and deploy data-driven applications.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>1200</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>249</span>
+            </div>
+            <img src="imgs/team-03.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-04.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">iOS App Development</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn how to build iOS apps using Swift and Xcode, including app
+                design, user interface development, and app store deployment.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>800</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>199</span>
+            </div>
+            <img src="imgs/team-04.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-05.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">Blockchain Fundamentals</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn the basics of blockchain technology and cryptocurrencies,
+                including how to build and deploy decentralized applications.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>500</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>99</span>
+            </div>
+            <img src="imgs/team-05.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-01.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">Java Programming</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn how to program in Java, including object-oriented
+                programming concepts, data structures, and algorithms.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>1500</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>299</span>
+            </div>
+            <img src="imgs/team-01.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+          <div class="box bg-white p-relative">
+            <img src="imgs/course-03.jpg" alt="" class="w-full" />
+            <div class="text p-20 border-eee-b">
+              <h3 class="mt-0 mb-10 fs-16">Full-Stack Web Development</h3>
+              <p class="c-gray fs-14 line-5">
+                Learn how to build dynamic web applications from front-end to
+                back-end using popular technologies like HTML/CSS, JavaScript,
+                React, Node.js, and MongoDB.
+              </p>
+            </div>
+            <div class="info between-flex p-10 c-gray fs-14">
+              <span><i class="fa-regular fa-user"></i>2000</span>
+              <a href="#" class="button-1x bg-blue c-white fs-14"
+                >Course Info</a
+              >
+              <span><i class="fa-solid fa-dollar-sign"></i>399</span>
+            </div>
+            <img src="imgs/team-03.png" alt="" class="w-50 rad-50 p-absolute" />
+          </div>
+        </div>
+        <!-- start courses page  -->
+      </div>
+      <!-- end content  -->
+    </div>
+  </body>
+</html>
